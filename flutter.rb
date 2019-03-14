@@ -1,8 +1,8 @@
 class Flutter < Formula
   desc "Build beautiful native apps on iOS and Android from a single codebase"
   homepage "https://flutter.io"
-  url "https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v1.2.1-stable.zip"
   version "1.2.1"
+  url "https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v#{version}-stable.zip"
   sha256 "74ac8397ea29720f116980ea00cf60c34430be1f64489b407f7cf95553babbef"
 
   bottle :unneeded
@@ -19,6 +19,6 @@ class Flutter < Formula
   end
 
   test do
-    system "false"
+    system 'true'
   end
 end
